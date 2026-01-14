@@ -1,0 +1,80 @@
+.section {
+    padding: 6rem 2rem;
+    background: var(--background);
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.header p {
+    color: #888;
+    font-size: 1.1rem;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    position: relative;
+}
+
+.step {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    background: var(--card-bg);
+    padding: 2.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--card-border);
+}
+
+.number {
+    font-size: 3rem;
+    font-weight: 800;
+    /* Extra bold */
+    color: rgba(255, 255, 255, 0.05);
+    margin-bottom: 1rem;
+    line-height: 1;
+}
+
+.step h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--foreground);
+}
+
+.step p {
+    color: #999;
+    line-height: 1.6;
+}
+
+.connector {
+    position: absolute;
+    top: 50%;
+    right: -2rem;
+    /* Half the gap */
+    width: 2rem;
+    height: 2px;
+    background: var(--card-border);
+    transform: translateX(50%);
+    display: none;
+    /* Hidden for now, simplified design */
+}
+
+@media (max-width: 768px) {
+    .steps {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,79 @@
+.footer {
+    border-top: 1px solid var(--card-border);
+    background: #050505;
+}
+
+.ctaSection {
+    padding: 8rem 2rem;
+    text-align: center;
+    background: radial-gradient(circle at 50% 100%, rgba(139, 92, 246, 0.1), transparent 50%);
+}
+
+.ctaSection h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(to right, #fff, #aaa);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.primaryBtn {
+    padding: 1rem 3rem;
+    background: var(--foreground);
+    color: var(--background);
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    transition: transform 0.2s;
+}
+
+.primaryBtn:hover {
+    transform: translateY(-2px);
+}
+
+.note {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.linksSection {
+    padding: 2rem;
+    border-top: 1px solid var(--card-border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.logo {
+    font-weight: 700;
+    color: #fff;
+}
+
+.socials {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.socials a:hover {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .linksSection {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+}

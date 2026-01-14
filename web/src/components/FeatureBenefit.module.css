@@ -1,0 +1,81 @@
+.section {
+    padding: 6rem 2rem;
+    overflow: hidden;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+.header h2 {
+    font-size: 2.5rem;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.right {
+    flex-direction: row-reverse;
+}
+
+.text {
+    flex: 1;
+}
+
+.visual {
+    flex: 1;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    height: 300px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    font-family: var(--font-mono);
+}
+
+.benefit {
+    color: var(--primary);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.05em;
+}
+
+.text h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.text p {
+    font-size: 1.1rem;
+    color: #aaa;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+
+    .item,
+    .right {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+}
